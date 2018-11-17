@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/E:/PBO/toko/src/toko/controller/StokController.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/PasswordBox.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/DataStokView.java</file>
+            <file>file:/E:/PBO/toko/src/toko/controller/SuplierController.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/Button.java</file>
+            <file>file:/E:/PBO/toko/src/toko/model/KaryawanModel.java</file>
+            <file>file:/E:/PBO/toko/src/toko/service/PenjualanDao.java</file>
+            <file>file:/E:/PBO/toko/src/toko/entity/Stok.java</file>
+            <file>file:/E:/PBO/toko/src/toko/model/event/KaryawanListener.java</file>
+            <file>file:/E:/PBO/toko/src/toko/error/AdminException.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/TextBox.java</file>
+            <file>file:/E:/PBO/toko/src/toko/model/AdminModel.java</file>
+            <file>file:/E:/PBO/toko/src/toko/koneksi/AdminKoneksi.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/Label.java</file>
+            <file>file:/E:/PBO/toko/src/toko/error/KaryawanException.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/FormatterBox.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/ProgressBar.java</file>
+            <file>file:/E:/PBO/toko/src/toko/koneksi/KaryawanKoneksi.java</file>
+            <file>file:/E:/PBO/toko/src/toko/entity/Admin.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/DataKaryawanView.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/TextArea.java</file>
+            <file>file:/E:/PBO/toko/src/toko/entity/Karyawan.java</file>
+            <file>file:/E:/PBO/toko/src/toko/model/event/PenjualanListener.java</file>
+            <file>file:/E:/PBO/toko/src/toko/service/AdminDao.java</file>
+            <file>file:/E:/PBO/toko/src/toko/service/impl/AdminDaoImpl.java</file>
+            <file>file:/E:/PBO/toko/src/toko/controller/PenjualanController.java</file>
+            <file>file:/E:/PBO/toko/src/toko/service/KaryawanDao.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/LoginAdminView.java</file>
+            <file>file:/E:/PBO/toko/src/toko/Toko.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/ScrollPane.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/Table.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/DataSuplierView.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/AdminView.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/PenjualanView.java</file>
+            <file>file:/E:/PBO/toko/src/toko/service/StokDao.java</file>
+            <file>file:/E:/PBO/toko/src/toko/service/impl/KaryawanDaoImpl.java</file>
+            <file>file:/E:/PBO/toko/src/toko/model/event/StokListener.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/Panel.java</file>
+            <file>file:/E:/PBO/toko/src/toko/view/usu/Toolbar.java</file>
+            <file>file:/E:/PBO/toko/src/toko/controller/KaryawanController.java</file>
+        </group>
+    </open-files>
+</project-private>
