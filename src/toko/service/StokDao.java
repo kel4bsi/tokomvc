@@ -16,18 +16,13 @@ public interface StokDao {
     public void insertStok(Stok stok) throws StokException;
     public void updateStok(Stok stok) throws StokException;
     
-    public void updatePinjamStok(String kode_brg) throws StokException;
+    public void updatePenjualan(String kode_brg) throws StokException;
     
-    public void updatePengembalian(String kode_brg) throws StokException;
-
     public void deleteStok(String kode_brg) throws StokException;
     
     public Stok getStok(String kode_brg) throws StokException;
     
-    public List<Stok> top10StokFavorit() throws StokException;
-    
-    public List<Stok> top10StokBaru() throws StokException;
-    
-    public List<Stok> selectAllStok() throws StokException;
-}
+     public List<Stok> selectAllStok() throws StokException;
+
+   }
 

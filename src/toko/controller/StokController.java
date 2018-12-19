@@ -55,7 +55,8 @@ public class StokController {
         String kode_brg        = view.gettxtKode_brg().getText();
         Date tgl_masuk   = new Date();
         jml_brg                = Integer.parseInt(view.gettxtJml_brg().getText());
-        Integer harga       = 0;
+       Integer harga           = Integer.parseInt(view.gettxtHarga().getText());
+        Integer jml_terjual    = 0;
 
         if (kode_brg.trim().equals("")) {
             JOptionPane.showMessageDialog(view, "Kode Stok Belum Terisi!!!");
@@ -65,20 +66,18 @@ public class StokController {
             JOptionPane.showMessageDialog(view, "Jumlah Stok Belum Terisi!!!");
         } else if (String.valueOf(jml_brg).length() > 4) {
             JOptionPane.showMessageDialog(view, "Jumlah Stok tidak boleh lebih dari 4 digit");
-        } else if (String.valueOf(jml_ditoko).trim().equals("")) {
-            JOptionPane.showMessageDialog(view, "Jumlah Ditoko Belum Terisi!!!");
-        } else if (String.valueOf(jml_ditoko).length() > 4) {
-            JOptionPane.showMessageDialog(view, "Jumlah Ditoko tidak boleh lebih dari 4 digit");
-        } else if (String.valueOf(jml_dipinjam).trim().equals("")) {
-            JOptionPane.showMessageDialog(view, "Jumlah Dipinjam Belum Terisi!!!");
-        } else if (String.valueOf(jml_dipinjam).length() > 4) {
-            JOptionPane.showMessageDialog(view, "Jumlah Dipinjam tidak boleh lebih dari 4 digit");
-        } else {
+        }  else if (String.valueOf(jml_terjual).trim().equals("")) {
+            JOptionPane.showMessageDialog(view, "Jumlah terjual Belum Terisi!!!");
+        } else if (String.valueOf(jml_terjual).length() > 4) {
+            JOptionPane.showMessageDialog(view, "Jumlah terjual tidak boleh lebih dari 4 digit");
+        }  else {
             model.setKode_brg(kode_brg);
             model.setTgl_masuk(tgl_masuk);
+            String nama_brg = null;
             model.setNama_brg(nama_brg);
             model.setJml_brg(jml_brg);
              model.setHarga(harga);
+             model.setJml_terjual(jml_terjual);
 
             try {
                 model.insertStok();
@@ -146,16 +145,16 @@ public class StokController {
         if (rowCounts == 0) {
             JOptionPane.showMessageDialog(view, "Belum Ada Stok Yang Tersimpan");
         } else if (nik.trim().equals("")) {
-            JOptionPane.showMessageDialog(view, "ID Anggota Belum Terisi!!!");
+            JOptionPane.showMessageDialog(view, "Nik Belum Terisi!!!");
         } else if (nik.length() > 6) {
-            JOptionPane.showMessageDialog(view, "ID Anggota tidak boleh lebih dari 6 karakter");
+            JOptionPane.showMessageDialog(view, "Nik tidak boleh lebih dari 6 karakter");
         } else {
             for (int i = 0; i < tblTransaksi.getRowCount(); i++) {
                 String Kode_brg = (String) tblTransaksi.getValueAt(i, 0);
                 model.setKode_brg(Kode_brg);
 
                 try {
-                    model.updatePinjamStok();
+                    model.updatepenjualan();
                 } catch (Throwable throwable) {
                     JOptionPane.showMessageDialog(view, new Object[]{
                                 "Terjadi Kesalahan Program",
@@ -166,22 +165,7 @@ public class StokController {
         }
     }
     
-    public void updatePengembalian(PengembalianView view) {
-        JTable tblTransaksi = view.getTblTransaksi();
-
-        for (int i = 0; i < tblTransaksi.getRowCount(); i++) {
-            model.setKode_brg((String) tblTransaksi.getValueAt(i, 2));
-
-            try {
-                model.updatePengembalian();
-            } catch (Throwable throwable) {
-                JOptionPane.showMessageDialog(view, new Object[]{
-                            "Terjadi Kesalahan Pada Program",
-                            throwable.getMessage()});
-            }
-        }
-        JOptionPane.showMessageDialog(view, "Data Stok berhasil Terupdate");
-    }
+   
 
     
     public void deleteStok(DataStokView view) {

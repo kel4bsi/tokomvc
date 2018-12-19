@@ -57,7 +57,6 @@ public class SuplierController {
             JOptionPane.showMessageDialog(view, "Email_suplier tidak boleh lebih dari 25 karakter");
         } else {
             model.setId_suplier(id_suplier);
-            model.setTgl_daftar(tgl_daftar);
             model.setNama_suplier(nama_suplier);
             model.setAlamat_suplier(alamat_suplier);
             model.setEmail_suplier(email_suplier);

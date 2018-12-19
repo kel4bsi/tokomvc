@@ -13,17 +13,18 @@ import java.util.Date;
  */
 public class Stok {
     private String kode_brg, nama_brg;
-    private int jml_brg, harga;
+    private int jml_brg, harga,jml_terjual;
     private Date tgl_masuk;
    
     public Stok() {
     }
 
     public Stok(String kode_brg, String nama_brg,
-                int jml_brg, int harga, Date tgl_masuk) {
+                int jml_brg,int jml_terjual, int harga, Date tgl_masuk) {
         this.kode_brg = kode_brg;
         this.nama_brg = nama_brg;
          this.jml_brg = jml_brg;
+          this.jml_terjual = jml_terjual;
         this.harga = harga;
       this.tgl_masuk = tgl_masuk;
     }
@@ -56,6 +57,13 @@ public class Stok {
     public void setJml_brg(int jml_brg) {
         this.jml_brg = jml_brg;
     }
+    
+    public int getJml_terjual() {
+        return jml_terjual;
+    }
+    public void setJml_terjual(int jml_terjual) {
+        this.jml_terjual = jml_terjual;
+    }
 
     public int getHarga() {
         return harga;
@@ -63,6 +71,8 @@ public class Stok {
     public void setHarga(int harga) {
         this.harga = harga;
     }
+
+   
     
 
 
